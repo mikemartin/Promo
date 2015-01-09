@@ -1,0 +1,58 @@
+
+// Sidebar
+// --------------------------------------------------
+.promo-sidebar {
+  
+  p, li { 
+    font-size: 1em; 
+    line-height: 1.4;
+  }
+
+  .affix {
+    @media (max-width: @screen-md-min) { position: relative; }
+    @media (min-width: @screen-md-min) { width: 293px; }
+    @media (min-width: @screen-lg-min) { width: 360px; }
+  }
+
+  // Price
+  .promo-price {
+    text-align: center;
+  }
+
+  .promo-price-value {
+    color: #595959;
+    font-size: 2em;
+  }
+
+  .promo-price-recurring {
+    margin-top: -15px;
+  }
+
+  // Shipping details
+  .promo-shipping {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+
+  .promo-shipping-item {
+    border-width: 1px 0px 1px 0px;
+    border-radius: 0;
+    border-color: #f0f0f0;
+  }
+
+  .promo-shipping-item:last-child {
+    border-bottom: 0px;
+  }
+
+
+
+  .panel {
+    font-size: 16px;
+    border-radius: 0;
+  }
+
+  .share {
+    text-align: center;
+  }
+}

@@ -1,0 +1,78 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close fui-arrow-left pull-left" aria-hidden="true"></button>
+      <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+      <h3 class="modal-title">Billing</h3>
+    </div>
+
+    <ul class="panel panel-tear-bottom receipt list-group">
+        <li class="receipt-item list-group-item">
+            <div class="receipt-item-inner">
+                Parallel Bars Sterling Silver Ring
+            </div>
+        </li>
+        <li class="receipt-item list-group-item">
+            <div class="receipt-item-inner">
+                Item Price
+                <div class="pull-right">$15.00</div>
+            </div>
+        </li>
+        <li class="receipt-item list-group-item">
+            <div class="receipt-item-inner">
+                Shipping
+                <div class="pull-right">$5.00</div>
+            </div>
+        </li>
+        <li class="receipt-item list-group-item">
+            <div class="receipt-item-inner">
+                Total Price
+                <div class="pull-right">$20.00</div>
+            </div>
+        </li>
+    </ul>
+    <div class="modal-body">
+      <form role="form" autocomplete="on">
+        <div class="form-group">
+          <label for="email">Contact info</label>
+          <div class="input-group">
+            <span class="input-group-addon ss-mail"></span>
+            <input type="email" id="email" class="form-control input-lg flat" placeholder="Email Address"/>
+          </div>
+        </div>
+        <div class="form-group">
+           <label for="email">Payment info</label>
+           <small class="billing-secure"><span class="fui-lock"></span>HTTPS Secure</small>
+          <div class="input-group">
+            <span class="input-group-addon ss-steedicons ss-creditcard"></span>
+            <input type="text" class="form-control input-lg flat cc-num" placeholder="1234 5678 9012 3246" pattern="\d*" autocompletetype="cc-number" required/>
+          </div>
+          <div class="row input-group-expiry">
+            <div class="col-xs-6 form-group">
+              <div class="input-group">
+                  <span class="input-group-addon ss-calendar"></span>
+                  <input type="text" class="form-control input-lg flat cc-exp" placeholder="MM/YY" pattern="\d*" size="7" autocompletetype="cc-exp" required/>
+              </div>
+            </div>
+            <div class="col-xs-6 form-group">
+              <div class="input-group">
+                  <span class="input-group-addon ss-steedicons ss-creditcard"></span>
+                  <input type="text" class="form-control input-lg flat cc-cvc" pattern="\d*" placeholder="CVV" autocomplete="off" autocompletetype="cc-csc"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group form-group-submit">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Continue</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>  
+
+    <script src="https://js.stripe.com/v1/" type="text/javascript"></script>
+    <script src="js/jquery.payment.js"></script>
+    <script src="js/application.js"></script>
